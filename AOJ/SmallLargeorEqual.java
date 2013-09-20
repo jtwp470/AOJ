@@ -5,17 +5,21 @@ import java.io.*;
 import java.util.*;
 class SmallLargeorEqual {
     public static void main(String args[]){
-	int a, b;
+	//int a, b;
 	try{
 	    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 	    String str = reader.readLine();
 	    StringTokenizer st = new StringTokenizer(str, " ");
-	    a = Integer.parseInt(st.nextToken());
-	    b = Integer.parseInt(st.nextToken());
+	    int a = Integer.parseInt(st.nextToken());
+	    int b = Integer.parseInt(st.nextToken());
 	    
-	    if(a > b) System.out.println(a+" > "+b);
-	    else if(a < b) System.out.println(a+" < "+b);
-	    else if(a == b) System.out.println(a+" == "+b);
+	    if(a > b) {
+		System.out.println("a > b");
+	    }else if(a < b){
+		System.out.println("a < b");
+	    }else{
+		System.out.println("a == b");
+	    }
 	}catch(IOException e){
 	    System.out.println(e);
 	}catch(Exception e){
