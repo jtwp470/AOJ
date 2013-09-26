@@ -1,22 +1,20 @@
 /*
- * StringTokenizerを使ってキーボード入力から空白ごとに文字を受け取りint型にします
+ * キーボード入力から空白ごとに文字を受け取りint型にします.なおかつ配列に代入します
  */
 import java.io.*;
-import java.util.*;
-class NumberToken{
+class NumberToken {
     public static void main(String args[]){
-	int a, b;
-	try{
-	    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	    String str = reader.readLine();
-	    //空白で区切る
-	    StringTokenizer st = new StringTokenizer(str, " ");
-	    a = Integer.parseInt(st.nextToken());
-	    b = Integer.parseInt(st.nextToken());
-	    int x = 2*(a+b);
-	    System.out.println(a*b +" "+x);
-	}catch(IOException e){
-	    System.out.println(e);
+	int[] resultnum;
+	resultnum = new int[10];
+	   
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+	try {
+	    String line = reader.readLine();
+	    String[] result = line.split("\\s");
+	    for(int x=0; x<result.length; x++){
+		resultnum[x]= Integer.parseInt(result[x]);
+		System.out.println(resultnum[x]);
+	    }
 	}catch(Exception e){
 	    System.out.println(e);
 	}
