@@ -14,6 +14,7 @@ Javaにも慣れてきたのでAIZU ONLINE JUDGEの問題を解いてみよう�
 
 なお，今まではStringTokenizerクラスを用いてこれを実現していたがJava Se7では
 >StringTokenizer は、互換性を維持する目的で保持されているレガシークラスであり、新規コードでは使用が推奨されていません。この機能の使用を考えているなら、String の split メソッドまたは java.util.regex パッケージを代わりに使用することをお勧めします。
+
 との記載があるので使用を見送った．
 
 過去にStringTokenizerクラスを用いたソースはNumberTokenLegacy.javaである．
