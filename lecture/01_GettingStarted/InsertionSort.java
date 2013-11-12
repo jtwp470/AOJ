@@ -1,3 +1,4 @@
+// Accepted 2013/11/12 on AOJ
 import java.util.Scanner;
 class InsertionSort {
     public static void main(String args[]){
@@ -16,6 +17,7 @@ class InsertionSort {
 	    for(j=i; j>0 && a[j-1]>tmp; j--)
 		a[j] = a[j-1];
 	    a[j] = tmp;
+	    show(a);
 	}
     }
     public static void swap(int a[], int idx1, int idx2){
