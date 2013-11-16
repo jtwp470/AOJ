@@ -10,13 +10,16 @@ public class Prime {
 	
 	// Is the number prime?
 	int i;
-    	for (i = 0; i < n; i++){
-	    int j;
-	    for(j=2; j<num[i]; j++){
-		if(num[i] % j == 0)
-		    break;
-	    }
-	    if(num[i] == j)
+    	for (i = 0; i < n; i++) {
+	    if(num[i] % 2 != 0 && num[i] % 3 != 0){
+		int j;
+		for(j=2; j<num[i]; j++){
+		    if(num[i] % j == 0)
+			break;
+		}
+		if(num[i] == j)
+		    counter++;
+	    }else if(num[i] == 2 || num[i] == 3)
 		counter++;
 	}
 	System.out.println(counter);
