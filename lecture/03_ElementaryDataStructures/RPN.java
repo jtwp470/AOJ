@@ -32,12 +32,14 @@ public class RPN{
 			// LIFOなので引く順番が逆
 			System.out.println(m+":"+n);
 			is.push(n-m);
+			System.out.println(i+": push to stack:"+(n-m));
 		    }
 		    else if(input[i].equals("*")){
 			int m = is.pop();
 			int n = is.pop();
 			System.out.println(m+":"+n);
 			is.push(m*n);
+			System.out.println(i+": push to stack:"+(m*n));
 		    }
 		}		
 	    }
@@ -46,8 +48,7 @@ public class RPN{
 
 	}catch(IOException e){
 	    e.printStackTrace();
-	}
-	
+	}	
     }
     //--- 文字列が数字かどうかを判定するメソッド ---//
     public static boolean isDigit(String s){
@@ -85,4 +86,3 @@ class IntStack {
 	return stk[--ptr];
     }
 }
-
