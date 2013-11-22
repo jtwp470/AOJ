@@ -14,9 +14,21 @@ public class SearchI {
 	for (int i = 0; i < num2; i++) 
 	    t[i] = sc.nextInt();
 
+
 	for (int i = 0; i < num1; i++){ 
 	    for (int j = 0; j < num2; j++){ 
-		cnt++;
+		if(s[i] == t[j]){
+		    for (int k = 0; k <= ptr; k++) {
+			if(tmp[k] == s[i])
+			    break;
+			else{
+			    tmp[++ptr] = s[i];
+			    cnt++;
+			    System.out.println(tmp[ptr]+" Add");
+			    break;
+			}
+		    }
+		}
 	    }
 	}
 	System.out.println(cnt);
