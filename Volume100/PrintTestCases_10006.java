@@ -3,7 +3,7 @@
  */
 import java.io.*;
 
-class PrintTestCases {
+class PrintTestCases_10006 {
     public static void main(String args[]){
 	int i = 0;
 	int a = 0;

@@ -1,8 +1,3 @@
-/*
- * AOJ 0001 List of Top 3 Hills
- *
- * 山の高さをメートル単位の整数で表した 10 個のデータがあります。その 10 個のデータを読み込んで、その中で、高い順から３つ出力して終了するプログラムを作成して下さい。
- */
 import java.io.*;
 class ListOfTop3Hills {
     public static void main(String args[]){

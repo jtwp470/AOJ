@@ -3,7 +3,7 @@
  */
 import java.io.*;
 import java.util.*;
-class SortingThreeNumbers {
+class SortingThreeNumbers_10004 {
     public static void main(String args[]){
 	int X[];
 	int tmp = 0;
