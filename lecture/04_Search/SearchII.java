@@ -14,12 +14,10 @@ public class SearchII {
 	int T[] = new int[q];
 	for (int i = 0; i < q; i++) 
 	    T[i] = sc.nextInt();
-
-	for (int i = 0; i < n-1; i++) {
-	    for (int j = i+1; j < n; j++) {
-		if(S[i] == S[j])
-		    tmp[j] = 0;
-	    }
+	// 重複要素の確認
+	for (int i = 0; i < n; i++) {
+	    if(binarySearch(S,S[i]))
+		tmp[i] = 0;
 	}
 	for (int i = 0; i < n; i++) {
 	    for (int j = 0; j < q; j++) {
@@ -36,5 +34,20 @@ public class SearchII {
 	    System.out.println("S["+i+"] :" +S[i]+" tmp["+i+"]: "+tmp[i]);
 	}
 	System.out.println(cnt);
+    }
+
+    public static boolean binarySearch(int a[], int key){
+	int pl = 0;
+	int pr = a.length -1;
+	do{
+	    int pc = (pl + pr)/2;
+	    if(a[pc] == key)
+		return true;
+	    else if(a[pc] < key)
+		pl = pc + 1;
+	    else
+		pr = pc - 1;
+	}while(pl <= pr);
+	return false;
     }
 }
