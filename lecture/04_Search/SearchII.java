@@ -1,8 +1,8 @@
 import java.util.Scanner;
-public class SearchI {
+public class SearchII {
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-	int tmp[] = new int[10000];
+	int tmp[] = new int[100000];
 	int cnt = 0;
 	int n = sc.nextInt();
 	int S[] = new int[n];
