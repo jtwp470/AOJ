@@ -1,5 +1,5 @@
 import java.io.*;
-class ListOfTop3Hills {
+class ListOfTop3Hills_0001 {
     public static void main(String args[]){
 	int X[];
 	X = new int[10];
@@ -13,7 +13,7 @@ class ListOfTop3Hills {
 	    }
 	    for(int i=0; i<X.length -1; i++){
 		for(int j=i+1; j<X.length; j++){
-		    if((X[i] >= 0 || X[i] <= 10000) || (X[j] >= 0 X[j] <= 10000)){
+		    if((X[i] >= 0 || X[i] <= 10000) || (X[j] >= 0 || X[j] <= 10000)){
 			if(X[i]<X[j]){
 			    tmp = X[i];
 			    X[i]=X[j];
