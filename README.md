@@ -4,7 +4,7 @@ I have solved the problem of the programming contest.
 ### Contests
 
 * [Aizu Online Judge (AOJ)](http://judge.u-aizu.ac.jp/onlinejudge/)
-* [AtCorder](http://atcoder.jp/)
+* [AtCoder](http://atcoder.jp/)
 
 ### Use Languages
 
