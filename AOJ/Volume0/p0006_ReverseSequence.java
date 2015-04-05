@@ -2,7 +2,7 @@
  * AOJ 0006 Reverse Sequence
  */
 import java.io.*;
-class ReverseSequence_0006 {
+class p0006_ReverseSequence {
     public static void main(String args[]){
 	char[] reverse;
 	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -17,12 +17,12 @@ class ReverseSequence_0006 {
 		    System.out.print(reverse[i]);
 		}
 		System.out.println();
-	    
+
 	    }else{
 		System.exit(0);
 	    }
 	}catch(Exception e){
 	    System.out.println(e);
 	}
-    }    
+    }
 }

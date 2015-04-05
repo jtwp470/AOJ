@@ -1,5 +1,5 @@
 import java.io.*;
-class ListOfTop3Hills_0001 {
+class p0001_ListOfTop3Hills {
     public static void main(String args[]){
 	int X[];
 	X = new int[10];

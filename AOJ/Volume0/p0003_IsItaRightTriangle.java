@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class IsItaRightTriangle_0003 {
+public class p0003_IsItaRightTriangle {
     public static boolean IsItaRightTriangle(int a, int b, int c) {
 	// 最大値をaと仮定
 	int tmp_a = a;
